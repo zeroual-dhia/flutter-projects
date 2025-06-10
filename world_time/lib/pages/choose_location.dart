@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:world_time/services/world_time.dart';
+import 'package:world_time_app/services/world_time.dart';
+
 
 class ChooseLocation extends StatefulWidget {
   const ChooseLocation({super.key});
