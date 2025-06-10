@@ -169,10 +169,10 @@ class ListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var icon = Icons.check_box_outline_blank;
-    var text_style = TextStyle();
+    var textStyle = TextStyle();
     if (myitem.completed.contains(text)) {
       icon = Icons.check_box;
-      text_style = TextStyle(decoration: TextDecoration.lineThrough);
+      textStyle = TextStyle(decoration: TextDecoration.lineThrough);
     }
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 5, vertical: 10),
@@ -193,7 +193,7 @@ class ListItem extends StatelessWidget {
               color: Colors.blue,
             ),
           ),
-          title: Text(text, style: text_style),
+          title: Text(text, style: textStyle),
           trailing: IconButton(
             onPressed: () {
               myitem.delete(text);
