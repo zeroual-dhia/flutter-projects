@@ -13,6 +13,8 @@ class CartModel extends ChangeNotifier {
     notifyListeners();
   }
 
+  
+
   void removeItem(Item item) {
     selectedItems.remove(item);
     total_price -= item.price;
